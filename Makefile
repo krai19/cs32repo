@@ -3,7 +3,7 @@
 CXX=clang++ 
 # CXX=g++ 
 
-hellowWorld: helloWorld.o
+helloWorld: helloWorld.o
 	${CXX} helloWorld.o -o helloWorld
 	
 helloWorld.o: helloWorld.cpp
@@ -14,3 +14,4 @@ clean:
 
 lab00Test: lab00Test.o tddFuncs.o arrayFuncs.o
 	${CXX} lab00Test.o tddFuncs.o arrayFuncs.o -o lab00Test
+
